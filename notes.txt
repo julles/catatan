@@ -1,0 +1,32 @@
+git reset --hard HEAD  (yang di local) 
+git reset --hard bf34k7232gehjghjgdg2t62382e8
+git push -f origin HEAD^:master
+git reset -f --soft HEAD~
+
+
+<VirtualHost 10.0.32.101:80>
+     ServerAdmin reza@rezartisan.com
+     DocumentRoot /var/www/mycrazysite/public/
+     ServerName www.rezartisan.com
+     <Directory />
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride All
+		Order allow,deny
+		allow from all
+   </Directory>
+</VirtualHost>
+
+php artisan vendor:publish --provider="Barryvdh\Elfinder\ElfinderServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Barryvdh\Elfinder\ElfinderServiceProvider" --tag="views"
+
+
+sudo apt-get update
+sudo apt-get install mcrypt php7.0-mcrypt
+sudo apt-get upgrade
+sudo apt-get install php-mbstring
+sudo apt-get install phpunit
+(sudo) apt install zip unzip php7.0-zip
+
+/bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+/sbin/mkswap /var/swap.1
+/sbin/swapon /var/swap.1
