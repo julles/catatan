@@ -32,3 +32,10 @@ sudo apt-get install phpunit
 /sbin/swapon /var/swap.1
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-mod_rewrite-for-apache-on-ubuntu-14-04
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean
+
+sudo a2ensite example.com.conf
+sudo a2ensite test.com.conf
+
+sudo chgrp -R apache yourfolder
+sudo chmod -R ug+rwx yourfolder
