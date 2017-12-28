@@ -26,6 +26,7 @@ sudo apt-get upgrade
 sudo apt-get install php-mbstring
 sudo apt-get install phpunit
 (sudo) apt install zip unzip php7.0-zip
+sudo apt-get install libapache2-mod-php7.0
 
 /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
 /sbin/mkswap /var/swap.1
@@ -84,3 +85,5 @@ https://stackoverflow.com/questions/42558903/expected-response-code-250-but-got-
 
 
 mysqld  --tc-heuristic-recover=ROLLBACK
+
+atom --clear-window-state
